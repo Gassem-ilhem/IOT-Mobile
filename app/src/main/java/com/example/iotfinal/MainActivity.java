@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button linebtn;
+    Button linebtn,tempbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,11 +21,20 @@ public class MainActivity extends AppCompatActivity {
 
 
         linebtn=(Button) findViewById(R.id.linebtn);
-
+        tempbtn=(Button) findViewById(R.id.tempbtn);
         linebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this,LineActivity.class);
+                startActivity(i);
+            }
+        });
+
+
+        tempbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,TempReelActivity.class);
                 startActivity(i);
             }
         });

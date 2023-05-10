@@ -84,6 +84,31 @@ public class Temp implements Serializable {
         });
     }
 
+    public void FetLastTemp(Context context, TempCallback2 callbacks ){
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference tempBdRef = database.getReference("temps");
+        Query query = tempBdRef.limitToLast(1);
+        query.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                for (DataSnapshot snap_data : snapshot.getChildren()) {
+                    String date = snap_data.child("date").getValue(String.class);
+                    Float value = snap_data.child("value").getValue(Float.class);
+                    String time = snap_data.child("time").getValue(String.class);
+
+                    callbacks.callback(value);
+
+                }}
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+
     @Override
     public String toString() {
         return "Temp{" +

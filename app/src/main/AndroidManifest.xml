@@ -12,6 +12,9 @@
         android:theme="@style/Theme.IOTFINAL"
         tools:targetApi="31">
         <activity
+            android:name=".TempReelActivity"
+            android:exported="false" />
+        <activity
             android:name=".LineActivity"
             android:exported="false" />
         <activity
