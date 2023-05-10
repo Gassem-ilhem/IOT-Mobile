@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.messaging.FirebaseMessaging;
+
 import java.util.ArrayList;
 
 
@@ -22,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
 
         linebtn=(Button) findViewById(R.id.linebtn);
         tempbtn=(Button) findViewById(R.id.tempbtn);
+
+        FirebaseMessaging firebaseMessaging = FirebaseMessaging.getInstance();
+        firebaseMessaging.subscribeToTopic("Temp_Notif");
+
         linebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
