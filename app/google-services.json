@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "445082511404",
+    "firebase_url": "https://iot-temp-sensor-2ebb3-default-rtdb.firebaseio.com",
+    "project_id": "iot-temp-sensor-2ebb3",
+    "storage_bucket": "iot-temp-sensor-2ebb3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445082511404:android:c063ea97bd845432c04989",
+        "android_client_info": {
+          "package_name": "com.example.iotfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445082511404-jsiu2r98798tcmdkq679r1q0s4lbmcn1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.iotfinal",
+            "certificate_hash": "7be24df2068b7485beac11f384b7240f57db15e7"
+          }
+        },
+        {
+          "client_id": "445082511404-3pl3gstcv3i5u2tkb7aan6c4qjjksskf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB86xCMxa9jDe-x_owrp-kWW0loWF0k0k8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445082511404-3pl3gstcv3i5u2tkb7aan6c4qjjksskf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
